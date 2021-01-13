@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "swagger-jsdoc": "^6.0.1"
+  }
+}
