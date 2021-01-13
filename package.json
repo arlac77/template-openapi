@@ -1,5 +1,7 @@
 {
   "devDependencies": {
-    "swagger-jsdoc": "^6.0.1"
+    "swagger-jsdoc": "^6.0.1",
+    "bootprint": "^4.0.4",
+    "bootprint-openapi": "^4.0.4"
   }
 }
