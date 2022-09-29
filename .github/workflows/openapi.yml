@@ -10,6 +10,7 @@ jobs:
           node-version: 18.10.0
       - run: npm ci
       - run: node openapi/openapi.mjs
+      - run: npx @redocly/cli lint openapi/openapi.json
       - uses: gr2m/create-or-update-pull-request-action@v1.x
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -19,7 +20,9 @@ jobs:
           branch: openapi
           commit-message: 'chore(openapi): update openapi definition'
       - run: mkdir -p build
-      - run: npx api2html -o build/index.html -l shell,javascript openapi/openapi.json
+      - run: >-
+          npx api2html -o build/index.html -l shell,javascript
+          openapi/openapi.json
       - uses: actions/upload-artifact@v3
         with:
           name: openapi
@@ -49,3 +52,4 @@ jobs:
           publish_branch: master
           publish_dir: openapi
           destination_dir: openapi
+          enable_jekyll: true
