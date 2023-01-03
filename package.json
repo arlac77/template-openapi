@@ -1,5 +1,10 @@
 {
   "devDependencies": {
     "swagger-jsdoc": "^6.2.7"
+  },
+  "template": {
+    "inheritFrom": [
+      "arlac77/template-npm"
+    ]
   }
 }
