@@ -1,6 +1,13 @@
 {
+  "scripts":{
+    "lint": "npm run lint:openapi",
+    "lint:openapi" : "redocly lint openapi/openapi.json",
+    "docs": "npm run docs:openapi",
+    "docs:openapi" : "redocly build-docs -o openapi/index.html openapi/openapi.json"
+  },
+
   "devDependencies": {
-    "swagger-jsdoc": "^6.2.7"
+    "@redocly/cli": "^1.0.0-beta.119"
   },
   "template": {
     "inheritFrom": [
