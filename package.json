@@ -1,19 +1,24 @@
-
-
-
 {
+  "name": "template-openapi",
+  "description": "template for openapi support",
   "scripts": {
-    "lint": "npm run lint:openapi",
-    "lint:openapi": "redocly lint openapi/openapi.json",
     "docs": "npm run docs:openapi",
-    "docs:openapi": "redocly build-docs -o openapi/index.html openapi/openapi.json"
+    "docs:openapi": "redocly build-docs -o openapi/index.html openapi/openapi.json",
+    "lint": "npm run lint:openapi",
+    "lint:openapi": "redocly lint openapi/openapi.json"
   },
   "devDependencies": {
     "@redocly/cli": "^1.3.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arlac77/template-openapi"
+  },
+  "bugs": {
+    "url": "https://github.com/arlac77/template-openapi/issues"
+  },
+  "homepage": "https://github.com/arlac77/template-openapi#readme",
   "template": {
-    "inheritFrom": [
-      "arlac77/template-npm"
-    ]
+    "inheritFrom": "arlac77/template-npm"
   }
 }
