@@ -6,7 +6,7 @@
     "docs:openapi": "redocly build-docs -o openapi/index.html openapi/openapi.json"
   },
   "devDependencies": {
-    "@redocly/cli": "^1.10.1"
+    "@redocly/cli": "^1.10.4"
   },
   "template": {
     "inheritFrom": [
