@@ -1,5 +1,7 @@
 {
   "scripts": {
+    "start":"npm run start:openapi",
+    "start:openapi": "redocly preview-docs openapi/openapi.json",
     "lint": "npm run lint:openapi",
     "lint:openapi": "redocly lint openapi/openapi.json",
     "docs": "npm run docs:openapi",
