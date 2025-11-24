@@ -8,8 +8,8 @@ jobs:
         uses: actions/checkout@v6.0.0
       - uses: actions/setup-node@v6.0.0
         with:
-          node-version: 22.21.0
-          cache: npm
+          node-version: 24.11.1
+          cache: --delete--
       - run: npm ci
       - run: npm run docs
       - name: Deploy Pages
